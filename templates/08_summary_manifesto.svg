@@ -1,0 +1,38 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111F"/>
+      <stop offset="100%" stop-color="#12263F"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="88" y="92" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#F59E0B">TEMPLATE / SUMMARY MANIFESTO</text>
+  <text x="88" y="172" font-family="Aptos, PingFang SC, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF">[Final Summary Title]</text>
+  <text x="88" y="230" font-family="Aptos, PingFang SC, sans-serif" font-size="24" fill="#B8C7D9">[Closing sentence that frames the last page.]</text>
+  <rect x="88" y="256" width="560" height="8" rx="4" fill="url(#warm)"/>
+  <rect x="88" y="358" width="320" height="56" rx="28" fill="#132A44" stroke="#5AA9FF" stroke-width="2"/>
+  <rect x="430" y="358" width="320" height="56" rx="28" fill="#132A44" stroke="#9A7BFF" stroke-width="2"/>
+  <rect x="772" y="358" width="320" height="56" rx="28" fill="#132A44" stroke="#5AA9FF" stroke-width="2"/>
+  <rect x="1114" y="358" width="390" height="56" rx="28" fill="#132A44" stroke="url(#warm)" stroke-width="2"/>
+  <text x="248" y="394" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">[Principle 01]</text>
+  <text x="590" y="394" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">[Principle 02]</text>
+  <text x="932" y="394" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">[Principle 03]</text>
+  <text x="1309" y="394" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">[Principle 04]</text>
+  <rect x="88" y="430" width="320" height="126" rx="24" fill="#132A44" stroke="#284A69" stroke-width="2"/>
+  <rect x="430" y="430" width="320" height="126" rx="24" fill="#132A44" stroke="#9A7BFF" stroke-width="2"/>
+  <rect x="772" y="430" width="320" height="126" rx="24" fill="#132A44" stroke="#284A69" stroke-width="2"/>
+  <rect x="1114" y="430" width="390" height="126" rx="24" fill="url(#warm)"/>
+  <text x="122" y="484" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="850" fill="#FFFFFF">[Short principle block]</text>
+  <text x="464" y="484" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="850" fill="#FFFFFF">[Short principle block]</text>
+  <text x="806" y="484" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="850" fill="#FFFFFF">[Short principle block]</text>
+  <text x="1148" y="484" font-family="Aptos, PingFang SC, sans-serif" font-size="26" font-weight="900" fill="#08111F">[Final takeaway]</text>
+  <text x="1148" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="26" font-weight="900" fill="#08111F">[Most important line]</text>
+  <rect x="88" y="620" width="1416" height="176" rx="28" fill="#132A44" stroke="#284A69" stroke-width="2"/>
+  <text x="122" y="674" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FFD166">[Closure Statement]</text>
+  <text x="122" y="740" font-family="Aptos, PingFang SC, sans-serif" font-size="30" font-weight="850" fill="#FFFFFF">[This is the final narrative sentence of the deck.]</text>
+  <text x="122" y="782" font-family="Aptos, PingFang SC, sans-serif" font-size="30" font-weight="900" fill="url(#warm)">[Make the memorable phrase glow here.]</text>
+</svg>

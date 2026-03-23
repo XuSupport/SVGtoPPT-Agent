@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Agent"
+  short_description: "Confirm style first, generate 3 sample pages, then build visually reviewed slide SVGs"
+  default_prompt: "Use $ppt-agent to confirm my topic and style draft, shortlist suitable local SVG templates first, generate 3 candidate slide directions from those templates, let me choose one, and only then build the final slide SVGs with rendered-image visual review."

@@ -1,0 +1,22 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <text x="96" y="110" font-family="Aptos, PingFang SC, sans-serif" font-size="200" font-weight="900" fill="#E2E8F0">07</text>
+  <rect x="354" y="88" width="8" height="680" rx="4" fill="url(#warm)"/>
+  <text x="410" y="122" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#B45309">TEMPLATE / STORY CHAPTER BREAK</text>
+  <text x="410" y="244" font-family="Georgia, Songti SC, serif" font-size="72" font-weight="700" fill="#0F172A">[Chapter Title]</text>
+  <text x="410" y="314" font-family="Georgia, Songti SC, serif" font-size="72" font-weight="700" fill="#0F172A">[Second Line]</text>
+  <text x="410" y="386" font-family="Aptos, PingFang SC, sans-serif" font-size="28" fill="#475569">[A strong transition sentence that changes the chapter.]</text>
+  <rect x="410" y="470" width="760" height="176" rx="24" fill="#0F172A"/>
+  <text x="446" y="528" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="800" fill="#FDBA74">[Key Shift]</text>
+  <text x="446" y="592" font-family="Aptos, PingFang SC, sans-serif" font-size="38" font-weight="900" fill="#FFFFFF">[Memorable line or chapter promise]</text>
+  <text x="446" y="638" font-family="Aptos, PingFang SC, sans-serif" font-size="22" fill="#CBD5E1">[Optional explanation in one short sentence.]</text>
+  <rect x="1230" y="132" width="230" height="72" rx="18" fill="url(#warm)"/>
+  <text x="1345" y="178" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="28" font-weight="900" fill="#0F172A">[Tag]</text>
+  <line x1="410" y1="738" x2="1450" y2="738" stroke="#CBD5E1" stroke-width="2"/>
+</svg>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PPT Agent Template Index</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #132236;
+      --panel-2: #0f1b2d;
+      --stroke: #284a69;
+      --text: #f8fafc;
+      --muted: #b8c7d9;
+      --accent: #f59e0b;
+      --accent-2: #ffd166;
+      --blue: #60a5fa;
+      --purple: #9a7bff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Aptos", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 15% 80%, rgba(245, 158, 11, 0.18), transparent 24%),
+        radial-gradient(circle at 85% 12%, rgba(96, 165, 250, 0.16), transparent 22%),
+        linear-gradient(135deg, #08111f 0%, #10233b 100%);
+      color: var(--text);
+    }
+    .wrap {
+      width: min(1480px, calc(100vw - 48px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 56px;
+      line-height: 1.05;
+      font-weight: 900;
+    }
+    .subtitle {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.5;
+      max-width: 980px;
+    }
+    .rule {
+      width: 520px;
+      height: 8px;
+      border-radius: 999px;
+      margin-top: 24px;
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 24px;
+      margin-top: 34px;
+    }
+    .hero-card, .tips {
+      background: rgba(19, 34, 54, 0.9);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      padding: 24px 28px;
+    }
+    .hero-card h2, .tips h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+      color: var(--accent-2);
+    }
+    .hero-card p, .tips li {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .tips ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+      margin-top: 34px;
+    }
+    .card {
+      background: rgba(19, 34, 54, 0.94);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+    }
+    .thumb {
+      padding: 18px 18px 0;
+    }
+    .thumb img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid rgba(184, 199, 217, 0.18);
+      background: #0a1628;
+    }
+    .meta {
+      padding: 18px 20px 22px;
+    }
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+    }
+    .title-row h3 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .code {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .type {
+      margin-top: 8px;
+      color: var(--accent-2);
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .desc {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .tag {
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    @media (max-width: 1080px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 44px; }
+      .rule { width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">PPT AGENT / TEMPLATE INDEX</div>
+    <h1>模板预览索引页</h1>
+    <div class="subtitle">
+      这不是一组一次性的成品页，而是一组可复用的 SVG 母版。后续做 PPT 时，优先先从这里筛 3 个方向，再生成候选页让用户选。
+    </div>
+    <div class="rule"></div>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>使用顺序</h2>
+        <p>1. 先确认主题与风格草案。</p>
+        <p>2. 再从模板库中筛 3-6 个最匹配的母版。</p>
+        <p>3. 基于其中 3 个做候选页，不从空白画布硬起稿。</p>
+        <p>4. 用户选定后，再按模板骨架扩成整套，并补结构图、渐变和质感层。</p>
+      </div>
+      <div class="tips">
+        <h2>筛选建议</h2>
+        <ul>
+          <li>开场/章节：优先选 `Dark Signal Opening` 或 `Story Chapter Break`。</li>
+          <li>核心判断：优先选 `Core Conclusion Banner`。</li>
+          <li>人群/场景：优先选 `Users Scenarios Split`。</li>
+          <li>增长/闭环：优先选 `Growth Flywheel Signal`。</li>
+          <li>风险/限制：优先选 `Risks Strip Grid`。</li>
+          <li>方法/流程：优先选 `Process Compiler Pipeline`。</li>
+          <li>论证/汇报：优先选 `Consulting Split Argument`。</li>
+          <li>指标/数据：优先选 `Bento Metric Dashboard`。</li>
+          <li>迁移/分类：优先选 `Quadrant Pattern Map`。</li>
+          <li>结尾/原则：优先选 `Summary Manifesto`。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="thumb"><img src="./previews/01_dark_signal_opening.png" alt="01 dark signal opening"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Dark Signal Opening</h3><div class="code">01</div></div>
+          <div class="type">深色叙事开场页</div>
+          <div class="desc">适合技术分享开场、风险议题、方法论主张页。大标题、结论卡和路径骨架都已经预留。</div>
+          <div class="tags"><span class="tag">深色</span><span class="tag">开场</span><span class="tag">主张</span><span class="tag">高冲击</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/02_consulting_split_argument.png" alt="02 consulting split argument"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Consulting Split Argument</h3><div class="code">02</div></div>
+          <div class="type">咨询式论证页</div>
+          <div class="desc">适合“为什么做”“问题定义”“现状-约束-目标”这类正式汇报场景，结构稳，落地快。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">咨询</span><span class="tag">三段论证</span><span class="tag">管理层</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/03_process_compiler_pipeline.png" alt="03 process compiler pipeline"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Process Compiler Pipeline</h3><div class="code">03</div></div>
+          <div class="type">流程/编译管线页</div>
+          <div class="desc">适合方法拆解、从输入到交付的阶段页，也适合 Agent 工作流和自愈闭环表达。</div>
+          <div class="tags"><span class="tag">深色</span><span class="tag">流程</span><span class="tag">阶段</span><span class="tag">编译器感</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/04_editorial_compare.png" alt="04 editorial compare"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Editorial Compare</h3><div class="code">04</div></div>
+          <div class="type">编辑式对比页</div>
+          <div class="desc">适合反模式 vs 正确做法、旧方案 vs 新方案，用更像文章版式的方式增强对照感。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">对比</span><span class="tag">编辑风</span><span class="tag">方法论</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/05_bento_metric_dashboard.png" alt="05 bento metric dashboard"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Bento Metric Dashboard</h3><div class="code">05</div></div>
+          <div class="type">指标/看板页</div>
+          <div class="desc">适合指标解释、数据闭环和流程型度量页。上半区看板，下半区漏斗或回环，非常稳。</div>
+          <div class="tags"><span class="tag">深色</span><span class="tag">Bento</span><span class="tag">指标</span><span class="tag">运营</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/06_quadrant_pattern_map.png" alt="06 quadrant pattern map"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Quadrant Pattern Map</h3><div class="code">06</div></div>
+          <div class="type">二维矩阵/范式页</div>
+          <div class="desc">适合场景迁移、方法分类和风险定位。主矩阵 + 右侧结论区，适合抽象内容落图。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">矩阵</span><span class="tag">迁移</span><span class="tag">范式</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/07_story_chapter_break.png" alt="07 story chapter break"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Story Chapter Break</h3><div class="code">07</div></div>
+          <div class="type">章节切换/转折页</div>
+          <div class="desc">适合章节页、观点转折页、记忆点页。用大编号和引言块拉开节奏，避免整套都像正文页。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">章节</span><span class="tag">转场</span><span class="tag">强记忆点</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/08_summary_manifesto.png" alt="08 summary manifesto"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Summary Manifesto</h3><div class="code">08</div></div>
+          <div class="type">总结收束页</div>
+          <div class="desc">适合结论页、原则页和 closing statement。顶部原则组块，底部收束陈述，很适合最后一页。</div>
+          <div class="tags"><span class="tag">深色</span><span class="tag">总结</span><span class="tag">原则</span><span class="tag">收束</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/09_nature_timeline_band.png" alt="09 nature timeline band"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Nature Timeline Band</h3><div class="code">09</div></div>
+          <div class="type">自然渐变时间线页</div>
+          <div class="desc">吸收了参考模板里的深绿渐变和轻时间线模块，适合历史沿革、品牌历程、阶段性演进。</div>
+          <div class="tags"><span class="tag">自然渐变</span><span class="tag">时间线</span><span class="tag">里程碑</span><span class="tag">轻信息图</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/10_nature_data_split.png" alt="10 nature data split"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Nature Data Split</h3><div class="code">10</div></div>
+          <div class="type">自然渐变数据拆分页</div>
+          <div class="desc">把图表、表格和双洞察说明放在同一页里，适合“数据 + 解读”同时出现的内容型页面。</div>
+          <div class="tags"><span class="tag">自然渐变</span><span class="tag">图表</span><span class="tag">表格</span><span class="tag">数据页</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/11_nature_loop_infographic.png" alt="11 nature loop infographic"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Nature Loop Infographic</h3><div class="code">11</div></div>
+          <div class="type">自然渐变环状信息图</div>
+          <div class="desc">适合生态关系、循环流程、四模块闭环。保留了参考页“图标节点 + 细线闭环”的气质，但做成了原创骨架。</div>
+          <div class="tags"><span class="tag">自然渐变</span><span class="tag">环状结构</span><span class="tag">信息图</span><span class="tag">四模块</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/12_core_conclusion_banner.png" alt="12 core conclusion banner"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Core Conclusion Banner</h3><div class="code">12</div></div>
+          <div class="type">核心结论页</div>
+          <div class="desc">适合“一页先打结论，再给支撑点”的页面。大判断横幅很适合战略判断、核心洞察和高层汇报。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">核心判断</span><span class="tag">战略结论</span><span class="tag">支撑点</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/13_users_scenarios_split.png" alt="13 users scenarios split"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Users Scenarios Split</h3><div class="code">13</div></div>
+          <div class="type">人群与场景拆分页</div>
+          <div class="desc">适合目标用户、画像标签和使用场景一起讲的页面。左画像、右场景，结构天然清楚。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">用户画像</span><span class="tag">场景</span><span class="tag">双区拆分</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/14_growth_flywheel_signal.png" alt="14 growth flywheel signal"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Growth Flywheel Signal</h3><div class="code">14</div></div>
+          <div class="type">增长飞轮 / 闭环页</div>
+          <div class="desc">适合增长逻辑、推荐机制、系统闭环。中央结构图承担主体，右侧判断栏承担解释，非常适合方法页。</div>
+          <div class="tags"><span class="tag">深色</span><span class="tag">飞轮</span><span class="tag">闭环</span><span class="tag">机制页</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><img src="./previews/15_risks_strip_grid.png" alt="15 risks strip grid"></div>
+        <div class="meta">
+          <div class="title-row"><h3>Risks Strip Grid</h3><div class="code">15</div></div>
+          <div class="type">风险栅格页</div>
+          <div class="desc">适合风险、限制条件和挑战展开。顶部风险条先定调，下面多卡横向铺开，很适合说明复杂阻力。</div>
+          <div class="tags"><span class="tag">浅色</span><span class="tag">风险</span><span class="tag">限制</span><span class="tag">多卡栅格</span></div>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">
+      模板源文件位于当前目录，缩略图位于 <code>./previews/</code>。完整使用规则见 <code>TEMPLATE_LIBRARY.md</code>。
+    </div>
+  </div>
+</body>
+</html>

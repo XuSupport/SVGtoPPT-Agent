@@ -1,0 +1,49 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3434"/>
+      <stop offset="45%" stop-color="#0E2E19"/>
+      <stop offset="100%" stop-color="#0D5A4F"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.12" cy="0.92" r="0.34">
+      <stop offset="0%" stop-color="#7A3E18" stop-opacity="0.36"/>
+      <stop offset="100%" stop-color="#7A3E18" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cool" cx="0.82" cy="0.78" r="0.42">
+      <stop offset="0%" stop-color="#1F9D7A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1F9D7A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#warm)"/>
+  <rect width="1600" height="900" fill="url(#cool)"/>
+  <text x="88" y="98" font-family="Aptos, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#D7F8E7">TEMPLATE / NATURE TIMELINE BAND</text>
+  <text x="88" y="176" font-family="Aptos, PingFang SC, sans-serif" font-size="72" font-weight="900" fill="#FFFFFF">[Timeline Headline]</text>
+  <text x="88" y="228" font-family="Aptos, PingFang SC, sans-serif" font-size="28" fill="#DCEFE8">[Use for milestones, history, stage evolution, or journey pages.]</text>
+
+  <line x1="312" y1="510" x2="1328" y2="510" stroke="#E9F4EE" stroke-width="3"/>
+  <line x1="312" y1="510" x2="312" y2="636" stroke="#E9F4EE" stroke-width="3"/>
+  <line x1="588" y1="510" x2="588" y2="384" stroke="#E9F4EE" stroke-width="3"/>
+  <line x1="864" y1="510" x2="864" y2="636" stroke="#E9F4EE" stroke-width="3"/>
+  <line x1="1140" y1="510" x2="1140" y2="384" stroke="#E9F4EE" stroke-width="3"/>
+
+  <text x="250" y="536" font-family="Aptos, PingFang SC, sans-serif" font-size="54" font-weight="900" fill="#FFFFFF">20XX</text>
+  <text x="526" y="536" font-family="Aptos, PingFang SC, sans-serif" font-size="54" font-weight="900" fill="#FFFFFF">20XX</text>
+  <text x="802" y="536" font-family="Aptos, PingFang SC, sans-serif" font-size="54" font-weight="900" fill="#FFFFFF">20XX</text>
+  <text x="1078" y="536" font-family="Aptos, PingFang SC, sans-serif" font-size="54" font-weight="900" fill="#FFFFFF">20XX</text>
+
+  <text x="182" y="706" font-family="Aptos, PingFang SC, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">[Event A]</text>
+  <text x="132" y="774" font-family="Aptos, PingFang SC, sans-serif" font-size="30" fill="#E9F4EE">[Short milestone description here.]</text>
+  <text x="132" y="812" font-family="Aptos, PingFang SC, sans-serif" font-size="30" fill="#E9F4EE">[Second short line if needed.]</text>
+
+  <text x="500" y="312" font-family="Aptos, PingFang SC, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">[Event B]</text>
+  <text x="430" y="364" font-family="Aptos, PingFang SC, sans-serif" font-size="30" fill="#E9F4EE">[Upper milestone explanation.]</text>
+
+  <text x="776" y="706" font-family="Aptos, PingFang SC, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">[Event C]</text>
+  <text x="706" y="774" font-family="Aptos, PingFang SC, sans-serif" font-size="30" fill="#E9F4EE">[Lower milestone explanation.]</text>
+
+  <text x="1048" y="312" font-family="Aptos, PingFang SC, sans-serif" font-size="40" font-weight="800" fill="#FFFFFF">[Event D]</text>
+  <text x="978" y="364" font-family="Aptos, PingFang SC, sans-serif" font-size="30" fill="#E9F4EE">[Upper milestone explanation.]</text>
+
+  <line x1="88" y1="846" x2="1512" y2="846" stroke="#CFE7DD" stroke-width="1.5" opacity="0.5"/>
+</svg>

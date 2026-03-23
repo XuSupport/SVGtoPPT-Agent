@@ -1,0 +1,52 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFDFD"/>
+      <stop offset="100%" stop-color="#FFF7F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="88" y="88" font-family="Aptos, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#D1493F">TEMPLATE / RISKS STRIP GRID</text>
+  <text x="88" y="168" font-family="Aptos, PingFang SC, sans-serif" font-size="62" font-weight="900" fill="#111827">[Risk headline line one]</text>
+  <text x="88" y="230" font-family="Aptos, PingFang SC, sans-serif" font-size="62" font-weight="900" fill="#111827">[Risk headline line two]</text>
+
+  <rect x="88" y="286" width="1424" height="110" rx="24" fill="#172235"/>
+  <text x="122" y="352" font-family="Aptos, PingFang SC, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">[This strip states the real question of this page]</text>
+  <text x="960" y="352" font-family="Aptos, PingFang SC, sans-serif" font-size="30" font-weight="800" fill="#F3978E">[And the critical risk lens]</text>
+
+  <rect x="88" y="432" width="262" height="202" rx="22" fill="#FFFFFF" stroke="#F5C9C4" stroke-width="2"/>
+  <rect x="374" y="432" width="262" height="202" rx="22" fill="#FFFFFF" stroke="#F5C9C4" stroke-width="2"/>
+  <rect x="660" y="432" width="262" height="202" rx="22" fill="#FFFFFF" stroke="#F5C9C4" stroke-width="2"/>
+  <rect x="946" y="432" width="262" height="202" rx="22" fill="#FFFFFF" stroke="#F5C9C4" stroke-width="2"/>
+  <rect x="1232" y="432" width="280" height="202" rx="22" fill="#FFFFFF" stroke="#F5C9C4" stroke-width="2"/>
+
+  <text x="118" y="474" font-family="Aptos, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#D1493F">RISK 01</text>
+  <text x="118" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#111827">[Risk title]</text>
+  <text x="118" y="562" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Short risk description.]</text>
+  <text x="118" y="594" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Second line.]</text>
+
+  <text x="404" y="474" font-family="Aptos, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#D1493F">RISK 02</text>
+  <text x="404" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#111827">[Risk title]</text>
+  <text x="404" y="562" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Short risk description.]</text>
+  <text x="404" y="594" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Second line.]</text>
+
+  <text x="690" y="474" font-family="Aptos, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#D1493F">RISK 03</text>
+  <text x="690" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#111827">[Risk title]</text>
+  <text x="690" y="562" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Short risk description.]</text>
+  <text x="690" y="594" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Second line.]</text>
+
+  <text x="976" y="474" font-family="Aptos, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#D1493F">RISK 04</text>
+  <text x="976" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#111827">[Risk title]</text>
+  <text x="976" y="562" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Short risk description.]</text>
+  <text x="976" y="594" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Second line.]</text>
+
+  <text x="1262" y="474" font-family="Aptos, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#D1493F">RISK 05</text>
+  <text x="1262" y="520" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#111827">[Risk title]</text>
+  <text x="1262" y="562" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Short risk description.]</text>
+  <text x="1262" y="594" font-family="Aptos, PingFang SC, sans-serif" font-size="18" fill="#667085">[Second line.]</text>
+
+  <rect x="88" y="680" width="1424" height="86" rx="20" fill="#FFF3F1" stroke="#F3D0CC" stroke-width="2"/>
+  <text x="118" y="734" font-family="Aptos, PingFang SC, sans-serif" font-size="24" font-weight="800" fill="#A24039">[One-sentence closing summary about the main challenge.]</text>
+
+  <line x1="88" y1="836" x2="1512" y2="836" stroke="#EBD7D4" stroke-width="1.5"/>
+</svg>

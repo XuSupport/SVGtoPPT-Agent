@@ -1,0 +1,50 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3434"/>
+      <stop offset="50%" stop-color="#0E2E19"/>
+      <stop offset="100%" stop-color="#0D5A4F"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.12" cy="0.94" r="0.34">
+      <stop offset="0%" stop-color="#7A3E18" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#7A3E18" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cool" cx="0.86" cy="0.82" r="0.42">
+      <stop offset="0%" stop-color="#1F9D7A" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#1F9D7A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#warm)"/>
+  <rect width="1600" height="900" fill="url(#cool)"/>
+  <text x="88" y="98" font-family="Aptos, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#D7F8E7">TEMPLATE / NATURE LOOP INFOGRAPHIC</text>
+  <text x="88" y="170" font-family="Aptos, PingFang SC, sans-serif" font-size="70" font-weight="900" fill="#FFFFFF">[You Can Use an Infographic]</text>
+
+  <path d="M560 410 H760 V328 H930 V410 H1102 V566 H930 V650 H760 V566 H560 Z" fill="none" stroke="#E9F4EE" stroke-width="3"/>
+  <rect x="732" y="280" width="224" height="160" fill="none" stroke="#E9F4EE" stroke-width="3"/>
+  <rect x="460" y="454" width="178" height="168" fill="none" stroke="#E9F4EE" stroke-width="3"/>
+  <rect x="760" y="610" width="178" height="168" fill="none" stroke="#E9F4EE" stroke-width="3"/>
+  <rect x="1048" y="454" width="178" height="168" fill="none" stroke="#E9F4EE" stroke-width="3"/>
+
+  <text x="844" y="238" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">[Top Node]</text>
+  <text x="126" y="332" font-family="Aptos, PingFang SC, sans-serif" font-size="50" font-weight="800" fill="#FFFFFF">[Left Topic]</text>
+  <text x="126" y="396" font-family="Aptos, PingFang SC, sans-serif" font-size="28" fill="#E9F4EE">[Short explanation of left topic.]</text>
+  <text x="126" y="432" font-family="Aptos, PingFang SC, sans-serif" font-size="28" fill="#E9F4EE">[Second line.]</text>
+
+  <text x="1106" y="300" font-family="Aptos, PingFang SC, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">[Right Topic]</text>
+  <text x="1106" y="354" font-family="Aptos, PingFang SC, sans-serif" font-size="24" fill="#E9F4EE">[Short explanation for top-right.]</text>
+
+  <text x="348" y="726" font-family="Aptos, PingFang SC, sans-serif" font-size="46" font-weight="800" fill="#FFFFFF">[Bottom Left]</text>
+  <text x="242" y="786" font-family="Aptos, PingFang SC, sans-serif" font-size="24" fill="#E9F4EE">[Short explanation below loop.]</text>
+  <text x="242" y="818" font-family="Aptos, PingFang SC, sans-serif" font-size="24" fill="#E9F4EE">[Second line.]</text>
+
+  <text x="1138" y="726" font-family="Aptos, PingFang SC, sans-serif" font-size="46" font-weight="800" fill="#FFFFFF">[Bottom Right]</text>
+  <text x="1034" y="786" font-family="Aptos, PingFang SC, sans-serif" font-size="24" fill="#E9F4EE">[Short explanation below loop.]</text>
+
+  <text x="549" y="557" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="56" fill="#E9F4EE">○</text>
+  <text x="844" y="369" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="56" fill="#E9F4EE">✿</text>
+  <text x="1137" y="557" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="56" fill="#E9F4EE">◫</text>
+  <text x="849" y="715" text-anchor="middle" font-family="Aptos, PingFang SC, sans-serif" font-size="56" fill="#E9F4EE">△</text>
+
+  <line x1="88" y1="846" x2="1512" y2="846" stroke="#CFE7DD" stroke-width="1.5" opacity="0.5"/>
+</svg>
