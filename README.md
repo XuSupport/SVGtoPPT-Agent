@@ -1,111 +1,110 @@
 # PPT Agent Skill
 
-Create full presentation decks with a single-model workflow that first produces each slide as SVG, reviews rendered previews, and only then finalizes the deck as a coherent but non-repetitive presentation.
+使用单个模型按固定工作流制作 PPT，并将每一页先输出为独立 SVG，再通过预览复检逐页打磨，最后生成整套高一致性但不单调的演示文稿。
 
-## What It Does
+[![EN](https://img.shields.io/badge/Language-English-green)](./README-EN.md)
 
-- builds full PPT decks from a topic, outline, webpage, PDF, report, or source notes
-- generates 3 distinct style concepts before full production, so the user can choose a direction first
-- uses a local SVG template library as structural reference instead of starting from a blank canvas every time
-- assigns different page families across the deck, such as:
-  - cover
-  - core conclusion
-  - risks
-  - comparison
-  - process
-  - system diagram
-  - dashboard
-  - matrix
-  - summary
-- renders PNG previews after SVG generation to catch overlaps, overflow, visual imbalance, and repetitive page structure
-- produces a final `.pptx` that is closer to a real presentation workflow than a one-shot graphic export
+## 它能做什么
 
-## Showcase
+- 根据主题、文档、网页、PDF、报告或大纲生成整套 PPT
+- 先给出 3 个不同风格候选页，让用户确认方向后再整套生成
+- 使用本地模板库做结构参考，而不是每次从空白画布随机起稿
+- 为不同页面自动分配不同页型：
+  - 开场页
+  - 核心判断页
+  - 风险页
+  - 对比页
+  - 流程页
+  - 系统图页
+  - 指标看板页
+  - 矩阵页
+  - 总结页
+- 在生成后自动渲染 PNG 预览图，检查重叠、压线、密度失衡和页面同构问题
+- 最终输出一套更接近真实汇报场景的 `.pptx`
 
-### Cover
+## 效果示例
+
+### 开场页
 
 ![Cover Example](dsl_agent_talk_ppt_v2/previews/slide_01.png)
 
-### Core Conclusion
+### 核心判断页
 
 ![Core Conclusion Example](dsl_agent_talk_ppt_v2/previews/slide_02.png)
 
-### Risks
+### 风险页
 
 ![Risks Example](dsl_agent_talk_ppt_v2/previews/slide_03.png)
 
-### System Diagram
+### 系统图页
 
 ![System Diagram Example](dsl_agent_talk_ppt_v2/previews/slide_07.png)
 
-### Dashboard
+### 指标看板页
 
 ![Dashboard Example](dsl_agent_talk_ppt_v2/previews/slide_08.png)
 
-### Matrix
+### 矩阵页
 
 ![Matrix Example](dsl_agent_talk_ppt_v2/previews/slide_09.png)
 
-## Core Features
+## 核心特点
 
-### 1. Template-first, but not template-locked
+### 1. 模板优先，但不模板化
 
-- ships with an original SVG template library
-- templates provide structure, rhythm, and module grammar
-- colors are re-designed for the current topic
-- the system does not blindly inherit template colors or copy
+- 内置一组原创 SVG 母版
+- 模板负责结构、节奏、模块语法
+- 配色会根据当前主题重新设计
+- 不会机械照搬某一个模板的颜色或文案
 
-### 2. Consistent deck, varied pages
+### 2. 风格统一，但页面必须有变化
 
-- the whole deck can share one visual mood, palette, and type system
-- individual slides must still vary in card grammar, density, graphic direction, and emphasis style
-- this avoids the “same dark rounded card repeated 10 times” problem
+- 整套 deck 可以统一气质、配色和字体
+- 但每一页的卡片样式、信息密度、主图形方向、强调方式必须变化
+- 避免“每页都是同一种深色圆角卡片”
 
-### 3. Built for real PPT delivery, not just pretty screenshots
+### 3. 真正面向 PPT 交付，而不是只生成一张好看的图
 
-The workflow is:
+- 先做上屏文案精修
+- 再做 SVG
+- 再渲染成 PNG 回看
+- 最后做整套跨页深修
 
-- refine screen-ready copy
-- generate SVG
-- render PNG previews
-- review visually
-- refine the full deck horizontally
+### 4. 支持强结构化内容
 
-### 4. Strong fit for structured content
+特别适合以下内容：
 
-This skill is especially strong for:
+- 技术方法论分享
+- 产品方案汇报
+- 安全分析与漏洞说明
+- 架构设计讲解
+- 流程、机制、职责边界、闭环指标类主题
 
-- technical methodology decks
-- product strategy presentations
-- security analysis and vulnerability explanations
-- architecture talks
-- workflows, mechanisms, boundaries, loops, and metric-heavy topics
+## 工作流
 
-## Workflow
+### Step 1. 明确主题和场景
 
-### Step 1. Define the topic and context
+先确定：
 
-Start by defining:
+- 主题
+- 受众
+- 使用场景
+- 页数
+- 语言
+- 想要的语气和风格边界
 
-- topic
-- audience
-- use case
-- slide count
-- language
-- tone and style boundaries
-
-Artifacts:
+产物：
 
 - `brief.md`
 - `style_draft.md`
 
-### Step 2. Create a style draft and 3 concept pages
+### Step 2. 先做风格草案，再做 3 个候选页
 
-- pick structural directions from the template library
-- generate 3 clearly different concepts using the same representative content
-- let the user choose a direction before full production
+- 从模板库中挑选合适结构
+- 基于同一页内容生成 3 个方向明显不同的候选页
+- 让用户先选风格，再整套开始
 
-Artifacts:
+产物：
 
 - `template_choice.md`
 - `concepts/option_a.svg`
@@ -116,33 +115,33 @@ Artifacts:
 - `concepts/option_c.png`
 - `style_decision.md`
 
-### Step 3. Assign page families before bulk generation
+### Step 3. 先分配页型，再批量生成
 
-Before drawing the full deck, define:
+在画整套之前，先写：
 
-- each slide's rhetorical role
-- each slide's page family
-- information density
-- template reference
+- 每一页是什么角色
+- 每一页适合什么页型
+- 每一页的信息密度如何
+- 每一页主要参考哪个模板
 
-Artifacts:
+产物：
 
 - `outline.md`
 - `page_family_plan.md`
 - `screen_copy.md`
 - `design_spec.md`
 
-### Step 4. Generate SVG slide by slide and review visually
+### Step 4. 逐页生成 SVG 并做视觉复检
 
-Each slide goes through:
+每一页都经过：
 
-1. screen-copy compression
-2. SVG construction
-3. PNG preview rendering
-4. visual review
-5. revision before moving to the next slide
+1. 文案压缩
+2. SVG 绘制
+3. PNG 预览
+4. 视觉复检
+5. 修正后再进入下一页
 
-Artifacts:
+产物：
 
 - `slides/slide_01.svg`
 - `slides/slide_02.svg`
@@ -151,27 +150,27 @@ Artifacts:
 - `previews/slide_02.png`
 - ...
 
-### Step 5. Refine the full deck and export PPT
+### Step 5. 整套深修并导出 PPT
 
-- check whether too many slides look structurally similar
-- fix overlap, overflow, and edge collisions
-- remove decoration that does not support the argument
-- export the final `.pptx`
+- 横向检查所有页面是否过于相似
+- 检查是否有重叠、溢出、压边
+- 检查是否存在无意义装饰
+- 再输出 `.pptx`
 
-## Output Structure
+## 输出目录说明
 
 - `templates/`
-  - original SVG template library
+  - 原创 SVG 模板库
 - `scripts/init_ppt_workspace.py`
-  - workspace initializer
+  - 初始化工作区
 - `scripts/render_svg_preview.sh`
-  - SVG-to-PNG preview renderer
-- `templates/TEMPLATE_LIBRARY.md`
-  - template descriptions
-- `templates/TEMPLATE_INDEX.html`
-  - visual template index
+  - 把 SVG 渲染成 PNG 预览
+- `TEMPLATE_LIBRARY.md`
+  - 模板说明
+- `TEMPLATE_INDEX.html`
+  - 模板预览索引页
 
-Typical generated workspace:
+典型生成目录：
 
 - `brief.md`
 - `style_draft.md`
@@ -185,50 +184,48 @@ Typical generated workspace:
 - `previews/`
 - `outputs/`
 
-## Best Use Cases
+## 适合的使用方式
 
-You can use this skill to:
+你可以这样使用这个 skill：
 
-- turn a topic into a fully planned and generated deck
-- turn a Markdown outline into a complete presentation
-- convert a report, webpage, or PDF into presentation-ready slides
-- provide reference screenshots and let the system absorb structural ideas while redesigning the actual output
+- 提供一个主题，让它直接为你策划并生成 PPT
+- 提供一个 Markdown 大纲，让它按大纲拆页并补充理论内容
+- 提供一个网页、PDF 或报告，让它先提炼，再转成演示文稿
+- 提供参考风格截图，让它吸收结构语法后重新设计自己的版本
 
-## Design Rules
+## 设计原则
 
-- templates inherit structure, not color
-- if text does not fit, rewrite the copy before shrinking the type
-- decoration must support meaning, not just make the page busier
-- deck consistency does not mean every slide should look the same
-- three consecutive slides using the same structural grammar should be treated as a failure signal
-- every page must pass preview review before it is considered done
+- 模板继承结构，不继承颜色
+- 如果文本放不下，先改文案，不要先缩字号
+- 装饰必须服务内容，不能只是“看起来热闹”
+- 整套统一，不等于每页长得一样
+- 连续三页使用同一种结构语法，视为失败信号
+- 所有页面必须经过预览复检后才算完成
 
-## Template Browser
+## 模板预览
 
-Template preview index:
+模板索引页：
 
 - [`templates/TEMPLATE_INDEX.html`](./templates/TEMPLATE_INDEX.html)
 
-Template descriptions:
+模板说明：
 
 - [`templates/TEMPLATE_LIBRARY.md`](./templates/TEMPLATE_LIBRARY.md)
 
-## Quick Start
+## 快速开始
 
-1. initialize a workspace
-2. write `brief.md`
-3. write `style_draft.md`
-4. select templates and generate 3 concept pages
-5. confirm the style direction
-6. write `outline.md`, `page_family_plan.md`, `screen_copy.md`, and `design_spec.md`
-7. generate SVG and PNG preview files slide by slide
-8. refine the deck horizontally
-9. export `.pptx`
+1. 初始化工作区
+2. 写 `brief.md`
+3. 写 `style_draft.md`
+4. 选择模板并生成 3 个候选页
+5. 用户确认风格
+6. 写 `outline.md`、`page_family_plan.md`、`screen_copy.md`、`design_spec.md`
+7. 逐页生成 SVG 和 PNG 预览
+8. 整套深修
+9. 导出 `.pptx`
 
-## Summary
+## 总结
 
-The point of `ppt-agent` is not just “automatic layout”.
+`ppt-agent` 的核心不是“自动排版”本身，而是把 PPT 制作变成一条可复检、可收敛、可持续复用的工作流。
 
-Its value is turning PPT creation into a reviewable, convergent, reusable production workflow for decks that need both structural clarity and real delivery quality.
-
-# SVGtoPPT-Agent
+它适合那些既要结构化表达、又要视觉质量、还要真实交付稳定性的演示文稿场景。
